@@ -48,6 +48,8 @@ function App() {
     return (
         <div className="Center">
             <br />
+            <h1>Haskell IRC Log Search</h1>
+            <br />
             <input
                 style={{ height: 30, fontSize: 17 }}
                 value={value}

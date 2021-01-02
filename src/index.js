@@ -5,6 +5,13 @@ import App from "./App";
 import Logs from "./Logs";
 import reportWebVitals from "./reportWebVitals";
 import { HashRouter as Router, Route } from "react-router-dom";
+import { enable as enableDarkMode } from 'darkreader';
+
+enableDarkMode({
+    brightness: 80,
+    contrast: 85,
+    sepia: 30,
+})
 
 ReactDOM.render(
     <React.StrictMode>

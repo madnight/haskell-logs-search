@@ -12,7 +12,7 @@ function Logs() {
 
     async function GetText(location) {
         const name = location.pathname.replace("/logs/", "");
-        const res = await axios("http://localhost:3000/file/" + name);
+        const res = await axios("https://logs.beuke.org/file/" + name);
 
         const randomColor = mem(() =>
             "#xxxxxx".replace(/x/g, (y) =>

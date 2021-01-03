@@ -17,7 +17,7 @@ function App() {
 
     async function Search(location) {
         const query = location.search.replace("?", "");
-        const res = await axios("http://localhost:3000/search/" + query);
+        const res = await axios("https://logs.beuke.org/search/" + query);
         const sortedResult = _.sortBy(res.data.results, [(o) => o.file]);
         setHits(res.data.hits);
         const searchResults = sortedResult.map((i) => {

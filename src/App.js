@@ -11,6 +11,7 @@ function App() {
     const [items, setitems] = useState([]);
     const [value, setValue] = useState("");
     const [hits, setHits] = useState("");
+    const [validationError, setValidationError] = useState("");
     const location = useLocation();
     const history = useHistory();
 
@@ -61,6 +62,24 @@ function App() {
 
     async function handleKeyDown(e) {
         if (e.key === "Enter") {
+            const reset = (err) => {
+                setValidationError(err);
+                history.push("/");
+                setHits(0);
+                setitems([]);
+            };
+
+            if (value.length < 1) {
+                return reset();
+            }
+
+            if (!value.match(/^[0-9a-zA-Z,-,+,\s]+$/)) {
+                return reset("Search term has to be alphanumeric");
+            }
+
+            if (value.length < 3) {
+                return reset("Search term length has to be longer than 3");
+            }
             history.push("/?" + value);
         }
     }
@@ -111,7 +130,9 @@ function App() {
             <br />
             <br />
             <div style={{ color: "grey" }}>
-                Found matches in {hits} files (days)
+                {hits
+                    ? "Found matches in " + hits + " files (days)"
+                    : validationError}
             </div>
             <br />
             <div className="SearchResults">

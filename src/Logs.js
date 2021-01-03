@@ -20,11 +20,12 @@ function Logs() {
             )
         );
 
-        const arr = res.data.split("\n").map((value, index) => {
+        const arr = res.data.split("\n").flat(0).map((value, index) => {
             const i = index + 1;
+            if (!value) return
             const log = value.split(" ");
             const timestamp = log[0];
-            const name = log[1];
+            const name = log[1].slice(0,20);
             const text = log.slice(2).join(" ");
             return (
                 <tr>

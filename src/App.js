@@ -11,6 +11,7 @@ function App() {
     const [items, setitems] = useState([]);
     const [value, setValue] = useState("");
     const [hits, setHits] = useState("");
+    const [loading, setLoading] = useState(false);
     const [validationError, setValidationError] = useState("");
     const location = useLocation();
     const history = useHistory();
@@ -54,6 +55,7 @@ function App() {
             );
         });
         setitems(searchResults);
+        setLoading(false)
     }
 
     useEffect(() => {
@@ -81,6 +83,9 @@ function App() {
                 return reset("Search term length has to be longer than 3");
             }
             history.push("/?" + value);
+            setitems([]);
+            setHits(0);
+            setLoading(true)
         }
     }
 
@@ -111,6 +116,13 @@ function App() {
             </div>
         );
     };
+    const Loading = () => {
+        if (loading) {
+            return (
+                <div className="Center"><div class="loader"></div></div>
+            )
+        }
+    }
 
     return (
         <div className="Center">
@@ -134,12 +146,12 @@ function App() {
                     ? "Found matches in " + hits + " files (days)"
                     : validationError}
             </div>
-            <br />
+            <br /> {Loading()}
             <div className="SearchResults">
                 <div style={{ color: "grey" }} className="App">
                     <table padding={5}>{items}</table>
                 </div>
-                <br />¬{Pagination()}
+                <br /> {Pagination()}
             </div>
         </div>
     );

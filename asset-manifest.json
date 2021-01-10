@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/haskell-logs-search/static/css/main.2b5e1b4a.chunk.css",
-    "main.js": "/haskell-logs-search/static/js/main.1e8ac69b.chunk.js",
-    "main.js.map": "/haskell-logs-search/static/js/main.1e8ac69b.chunk.js.map",
+    "main.css": "/haskell-logs-search/static/css/main.6122e4bb.chunk.css",
+    "main.js": "/haskell-logs-search/static/js/main.e6123121.chunk.js",
+    "main.js.map": "/haskell-logs-search/static/js/main.e6123121.chunk.js.map",
     "runtime-main.js": "/haskell-logs-search/static/js/runtime-main.2bb6679d.js",
     "runtime-main.js.map": "/haskell-logs-search/static/js/runtime-main.2bb6679d.js.map",
-    "static/js/2.01394511.chunk.js": "/haskell-logs-search/static/js/2.01394511.chunk.js",
-    "static/js/2.01394511.chunk.js.map": "/haskell-logs-search/static/js/2.01394511.chunk.js.map",
+    "static/js/2.3a0e76a4.chunk.js": "/haskell-logs-search/static/js/2.3a0e76a4.chunk.js",
+    "static/js/2.3a0e76a4.chunk.js.map": "/haskell-logs-search/static/js/2.3a0e76a4.chunk.js.map",
     "static/js/3.2c23e868.chunk.js": "/haskell-logs-search/static/js/3.2c23e868.chunk.js",
     "static/js/3.2c23e868.chunk.js.map": "/haskell-logs-search/static/js/3.2c23e868.chunk.js.map",
     "index.html": "/haskell-logs-search/index.html",
-    "static/css/main.2b5e1b4a.chunk.css.map": "/haskell-logs-search/static/css/main.2b5e1b4a.chunk.css.map",
-    "static/js/2.01394511.chunk.js.LICENSE.txt": "/haskell-logs-search/static/js/2.01394511.chunk.js.LICENSE.txt"
+    "static/css/main.6122e4bb.chunk.css.map": "/haskell-logs-search/static/css/main.6122e4bb.chunk.css.map",
+    "static/js/2.3a0e76a4.chunk.js.LICENSE.txt": "/haskell-logs-search/static/js/2.3a0e76a4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2bb6679d.js",
-    "static/js/2.01394511.chunk.js",
-    "static/css/main.2b5e1b4a.chunk.css",
-    "static/js/main.1e8ac69b.chunk.js"
+    "static/js/2.3a0e76a4.chunk.js",
+    "static/css/main.6122e4bb.chunk.css",
+    "static/js/main.e6123121.chunk.js"
   ]
 }
